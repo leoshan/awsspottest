@@ -1,0 +1,40 @@
+{
+  "IamFleetRole": "arn:aws:iam::946464008307:role/aws-ec2-spot-fleet-tagging-role",
+  "AllocationStrategy": "lowestPrice",
+  "TargetCapacity": 1,
+  "SpotPrice": "0.17",
+  "ValidFrom": "2018-12-09T08:09:05Z",
+  "ValidUntil": "2019-12-09T08:09:05Z",
+  "TerminateInstancesWithExpiration": true,
+  "LaunchSpecifications": [
+    {
+      "ImageId": "ami-428aa838",
+      "InstanceType": "c5.xlarge",
+      "SubnetId": "subnet-65600f00, subnet-85bab2f3, subnet-c10358eb, subnet-95efcacd, subnet-c930b8c5",
+      "KeyName": "leo-outlook-us-east-1",
+      "EbsOptimized": true,
+      "SpotPrice": "0.17",
+      "Monitoring": {
+        "Enabled": true
+      },
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/xvda",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 8,
+            "SnapshotId": "snap-0ef38d9386a70b23b"
+          }
+        }
+      ],
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-d6c55da3"
+        }
+      ],
+      "UserData": "IyEvYmluL2Jhc2gKc3VkbyBzdQojbW91bnQgZWZzIHN0b3JhZ2UgYW5kIGdpdCB0ZXN0IHNjcmlwdAp5dW0gaW5zdGFsbCAteSBhbWF6b24tZWZzLXV0aWxzIGdpdCBmaW8KbWtkaXIgL21udC9lZnMKbW91bnQgLXQgZWZzIGZzLTA1YjhiOTRmOi8gL21udC9lZnMKY2QgL21udC9lZnMKI21rZGlyIGJ5IHN5c3RlbSB0aW1lIGZvciB0ZXN0CnRpbWVkaXI9JChkYXRlICcrJVklbSVkJUglTSVTJykKbWtkaXIgJHRpbWVkaXIKY2QgJHRpbWVkaXIKZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9sZW9zaGFuL2F3c25pdHJvdGVzdC5naXQKeXVtIHVwZ3JhZGUgLXk="
+    }
+  ],
+  "Type": "request"
+}
