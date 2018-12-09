@@ -5,5 +5,9 @@ yum install -y amazon-efs-utils git fio
 mkdir /mnt/efs
 mount -t efs fs-05b8b94f:/ /mnt/efs
 cd /mnt/efs
+#mkdir by system time for test
+timedir=$(date '+%Y%m%d%H%M%S')
+mkdir $timedir
+cd $timedir
 git clone https://github.com/leoshan/awsnitrotest.git
 yum upgrade -y
