@@ -1,0 +1,6 @@
+on windows use mobaxterm
+https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/installing.html
+
+1、use msi install
+https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/awscli-install-windows.html
+mobaxterm terminal setting 勾选 windows environment 
